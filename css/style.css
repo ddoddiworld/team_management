@@ -1,0 +1,94 @@
+header{
+    background: #f9e000;
+    border-radius: 10px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+}
+
+main h2 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.search-fild .user{
+    float: left;
+}
+
+.search-fild .search{
+    float: right;
+}
+
+.search-fild label{
+    margin-right: 5px;
+}
+
+.search-fild input{
+    width: 120px;
+    border: 1.5px solid #f9e000;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.search button, .modify-button, .delete-button{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #4e4e4e;
+    padding: 3px 10px;
+}
+
+.search button:hover,
+.modify-button:hover,
+.delete-button:hover{
+    background: #f9e000;
+}
+
+.table{
+    margin-top: 80px;
+}
+
+.table>thead>tr>th {
+    border-color: #f9e000;
+}
+
+.table, .table th {
+    text-align: center;
+}
+
+.table th {
+    font-size: 1.5rem;
+}
+
+.table {
+    color: #4e4e4e;
+}
+
+.table a {
+    color: inherit;
+}
+
+.table a:hover {
+    color: #f9e000;
+    text-decoration: none;
+}
+
+.pager {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.pager a {
+    color: #f9e000;
+}
+
+.pager .pager-num span a{
+    color: #4e4e4e;
+    padding: 0 10px;
+}

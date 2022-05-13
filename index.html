@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 만들기 - 부트스트랩</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+    <header>
+        <h1><img src="images/mainLogoFriends_1920.svg" alt="kakao"></h1>
+    </header>
+    <main>
+        <h2>카카오 프렌즈 주식회사 직원현황</h2>
+        <form action="#" class="search-fild">
+            <div class="user">
+                <label for="name">이름</label><input type="text" id="name" name="userName">
+                <label for="part">부서</label><input type="text" id="part" name="userPart">
+                <label for="level">직급</label><input type="text" id="level" name="userLevel">
+                <label for="date">입사일</label><input type="date" id="date" name="userDate">
+                <label for="email">이메일</label><input type="email" id="email" name="userEmail">
+            </div>
+            <div class="search">
+                <label for="search">검색</label><input type="search" id="search" name="search">
+                <button type="button" class="add">등록</button>
+                <button type="button" class="reset">초기화</button>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <!--테이블 제목들-->
+                <tr>
+                    <th class="number">#</th>
+                    <th class="name">이름</th>
+                    <th class="part">부서</th>
+                    <th class="level">직급</th>
+                    <th class="date">입사일</th>
+                    <th class="work-date">근속연수</th>
+                    <th class="email">이메일</th>
+                    <th class="modify">수정</th>
+                    <th class="delete">삭제</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--본문 내용들: # / 이름 / 부서 / 직급 / 입사일 / 근속연수 / 이메일 / 수정 / 삭제 -->
+                <tr>
+                    <td>1</td>
+                    <td>춘식</td>
+                    <td>개발팀</td>
+                    <td>대리</td>
+                    <td>2022-01-01</td>
+                    <td>0</td>
+                    <td>chunsik@kakao.com</td>
+                    <td><button type="button" class="modify-button">수정</button></td>
+                    <td><button type="button" class="delete-button">삭제</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>어피치</td>
+                    <td>디자인팀</td>
+                    <td>과장</td>
+                    <td>2022-05-05</td>
+                    <td>0</td>
+                    <td>apeach@kakao.com</td>
+                    <td><button type="button" class="modify-button">수정</button></td>
+                    <td><button type="button" class="delete-button">삭제</button></td>
+                </tr>
+            </tbody>
+        </table>
+            <ul class="pager">
+                <li>
+                    <a href="#">
+                    <i class="xi-angle-left"></i>
+                    이전
+                    </a>
+                </li>
+                <div class="pager-num">
+                    <span><a href="#">1</a></span>
+                    <span><a href="#">2</a></span>
+                    <span><a href="#">3</a></span>
+                    <span><a href="#">4</a></span>
+                    <span><a href="#">5</a></span>
+                </div>
+                <li>
+                    <a href="#">
+                    다음
+                    <i class="xi-angle-right"></i>
+                    </a>
+                </li>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
