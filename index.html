@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/random.js"></script>
 </head>
 
 <body class="container">
@@ -32,8 +34,8 @@
             </div>
             <div class="search">
                 <label for="search">검색</label><input type="search" id="search" name="search">
-                <button type="button" class="add">등록</button>
-                <button type="button" class="reset">초기화</button>
+                <button type="button" class="add" onclick="createData()">등록</button>
+                <button type="button" class="reset" onclick="fn_reset()">초기화</button>
             </div>
         </form>
         <table class="table">
@@ -51,54 +53,11 @@
                     <th class="delete">삭제</th>
                 </tr>
             </thead>
-            <tbody>
-                <!--본문 내용들: # / 이름 / 부서 / 직급 / 입사일 / 근속연수 / 이메일 / 수정 / 삭제 -->
-                <tr>
-                    <td>1</td>
-                    <td>춘식</td>
-                    <td>개발팀</td>
-                    <td>대리</td>
-                    <td>2022-01-01</td>
-                    <td>0</td>
-                    <td>chunsik@kakao.com</td>
-                    <td><button type="button" class="modify-button">수정</button></td>
-                    <td><button type="button" class="delete-button">삭제</button></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>어피치</td>
-                    <td>디자인팀</td>
-                    <td>과장</td>
-                    <td>2022-05-05</td>
-                    <td>0</td>
-                    <td>apeach@kakao.com</td>
-                    <td><button type="button" class="modify-button">수정</button></td>
-                    <td><button type="button" class="delete-button">삭제</button></td>
-                </tr>
+            <tbody id="tbody">
+                <!--본문 내용들: # / 이름 / 부서 / 직급 / 입사일 / 근속연수 / 이메일 / 수정 / 삭제 --> 
             </tbody>
         </table>
-            <ul class="pager">
-                <li>
-                    <a href="#">
-                    <i class="xi-angle-left"></i>
-                    이전
-                    </a>
-                </li>
-                <div class="pager-num">
-                    <span><a href="#">1</a></span>
-                    <span><a href="#">2</a></span>
-                    <span><a href="#">3</a></span>
-                    <span><a href="#">4</a></span>
-                    <span><a href="#">5</a></span>
-                </div>
-                <li>
-                    <a href="#">
-                    다음
-                    <i class="xi-angle-right"></i>
-                    </a>
-                </li>
     </main>
-    <footer></footer>
 </body>
 
 </html>
